@@ -1,7 +1,12 @@
 fastapi
 uvicorn
 sqlalchemy[psycopg2]
+psycopg2-binary
 pydantic[email]
 pydantic-settings
-passlib[bcrypt]
 python-jose[cryptography]
+python-multipart
+
+# --- Version fixes for Vercel ---
+passlib==1.7.4
+bcrypt==4.1.3
